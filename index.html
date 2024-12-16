@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="registrationform.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Registration Form</h1>
@@ -17,13 +17,16 @@
           </fieldset>
       <fieldset>
         <legend>Account type (required)</legend>
+        <!-- radio kay3tek joj fihum box like the remember box -->
         <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
         <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
       </fieldset>
       <fieldset>
+        <!-- type file give you the access to upload files -->
         <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
         <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
         <label for="referrer">How did you hear about us?
+            <!-- for selection gives you many option to choose between them -->
           <select id="referrer" name="referrer">
             <option value="">(select one)</option>
             <option value="1">freeCodeCamp News</option>
@@ -43,3 +46,6 @@
     </form>
   </body>
 </html>
+<fieldset>
+    <label for=""><input type="text"></label>
+</fieldset>
